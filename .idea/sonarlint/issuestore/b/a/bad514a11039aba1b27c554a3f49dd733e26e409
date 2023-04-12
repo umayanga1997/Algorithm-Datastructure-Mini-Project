@@ -1,35 +1,0 @@
-
-Q
-java:S3740n"/Provide the parametrized type for this generic.(ïéôéÿÿÿÿÿ8º”ˆ¯÷0
-Q
-java:S3740n"/Provide the parametrized type for this generic.(ïéôéÿÿÿÿÿ8»”ˆ¯÷0
-?
-java:S1643ó"Use a StringBuilder instead.(ÔÌòÛÿÿÿÿÿ8¾”ˆ¯÷0
-R
-java:S1143F"5Remove this return statement from this finally block.(¥¹ï8­Íˆ¯÷0
-7
-java:S1220""Move this file to a named package.8·Ïé®÷0
-i
-java:S2259"L"NullPointerException" will be thrown when invoking method "writeQHKFile()".(ˆÔª“8ı‡ê®÷0
-g
-java:S2259"K"NullPointerException" will be thrown when invoking method "writeHKFile()".(…”ìy8ˆê®÷0
-V
-java:S3516"9Refactor this method to not always return the same value.(µÇã’8›Š¯÷0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(óÄÕÇ8“‰ê®÷0
-H
-java:S1168="+Return an empty collection instead of null.(¥¹ï8€œˆ¯÷0
-H
-java:S1168F"+Return an empty collection instead of null.(¥¹ï8¯Óˆ¯÷0
-T	java:S106v"9Replace this use of System.out or System.err by a logger.(¥ÖC8š‹ê®÷0
-Z	java:S106w"9Replace this use of System.out or System.err by a logger.( ˜©…øÿÿÿÿ8´‚…¯÷0
-T	java:S106x"9Replace this use of System.out or System.err by a logger.(¥ÖC8’œˆ¯÷0
-U	java:S106|"9Replace this use of System.out or System.err by a logger.(ßÒÙ›8“œˆ¯÷0
-Z	java:S106~"9Replace this use of System.out or System.err by a logger.(ÖÒ‡Äøÿÿÿÿ8•œˆ¯÷0
-V	java:S106˜"9Replace this use of System.out or System.err by a logger.(’ôÆà8 œˆ¯÷0
-V	java:S106š"9Replace this use of System.out or System.err by a logger.(Àûå 8¡œˆ¯÷0
-X
-java:S1854§":Remove this useless assignment to local variable "header".(¹ˆ›Ø8¢œˆ¯÷0
-I
-java:S1481§"+Remove this unused "header" local variable.(¹ˆ›Ø8¥œˆ¯÷0
-V	java:S106½"9Replace this use of System.out or System.err by a logger.(’ôÆà8®œˆ¯÷0
-V	java:S106¿"9Replace this use of System.out or System.err by a logger.(Àûå 8¯œˆ¯÷0

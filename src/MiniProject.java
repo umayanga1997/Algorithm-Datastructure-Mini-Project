@@ -28,10 +28,10 @@ public class MiniProject {
     private static LinkedList<Hashtable<Integer, String>> generateWordList (){
         // For read a file
         BufferedReader reader = null;
-        try {
-            // For create Word List
-            LinkedList<Hashtable<Integer, String>> wordList = new LinkedList<>();
+        // For create Word List
+        LinkedList<Hashtable<Integer, String>> wordList = new LinkedList<>();
 
+        try {
             // Read a File
             reader = new BufferedReader(new FileReader("src/file6.txt"));
             List<String> words = new ArrayList<>();
@@ -54,8 +54,6 @@ public class MiniProject {
                 if(!wordList.contains(map))
                     wordList.add(map);
             }
-
-            return wordList;
         } catch (IOException e) {
             e.printStackTrace();
             return null;
@@ -67,7 +65,7 @@ public class MiniProject {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            return null;
+            return wordList;
         }
     }
 
@@ -96,8 +94,7 @@ public class MiniProject {
     private static void quaProbTable(ArrayList<Hashtable<Integer, String>> newWordList){
 
         LinkedList<Hashtable<Integer, String>> quProbList = new LinkedList<>();
-
-        quProbList.addAll(initList(119)); // Make size of Array List
+        quProbList.addAll(initList(newWordList.size())); // Make size of Array List
 
         int quIndex =0;
         // Looping Word List
@@ -105,7 +102,7 @@ public class MiniProject {
             // Get Word only
             String word = mapData.entrySet().iterator().next().getValue();
             // Create a new Index/Key
-            int key = (generateHashKey(word) + (quIndex * quIndex)) % 119; // (K + i2) % 119
+            int key = (generateHashKey(word) + (quIndex * quIndex)) % newWordList.size(); // (K + i2) % 119
             // Mapping Data
             Hashtable map = new Hashtable();
             map.put(key,  mapData.entrySet().iterator().next().getValue());
@@ -118,13 +115,13 @@ public class MiniProject {
         System.out.println("------------------------------------");
         System.out.println("Index\t\t|\tWords in file6.txt");
         System.out.println("------------------------------------");
-        int inx =0;
+        int index =0;
         for (Hashtable<Integer, String> mapData : quProbList){
             if(mapData != null)
-                System.out.println(inx+"\t\t\t\t"+ mapData.entrySet().iterator().next().getValue());
+                System.out.println(index + "\t\t\t\t" + mapData.entrySet().iterator().next().getValue());
             else
-                System.out.println(inx);
-            inx++;
+                System.out.println(index);
+            index++;
         }
     }
 
